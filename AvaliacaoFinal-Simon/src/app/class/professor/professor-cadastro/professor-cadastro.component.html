@@ -1,0 +1,20 @@
+<mat-card class="card-cadastro">
+    <mat-card-content>
+      <mat-form-field appearance="fill">
+        <input matInput [(ngModel)]="professor.nome" placeholder="Digite o nome do Professor">
+      </mat-form-field><br>
+      <mat-form-field appearance="fill">
+        <input matInput [(ngModel)]="professor.email" placeholder="Digite o email do Professor">
+      </mat-form-field><br>
+      <!-- <mat-form-field>
+        <mat-label>Disciplinas</mat-label>
+        <mat-select [form-Control]="disciplinasSelect" multiple>
+          <mat-select-trigger>{{disciplinasSelect.value?.[0] || '0'}}</mat-select-trigger>r
+          <mat-option *ngFor="let disciplina of disciplinas" [value]="disciplina.id">{{disciplina.nome}}</mat-option>
+        </mat-select>
+      </mat-form-field> -->
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-raised-button color="primary" (click)="cadastrar()">{{nomeBotao}}</button>
+    </mat-card-actions>
+  </mat-card>

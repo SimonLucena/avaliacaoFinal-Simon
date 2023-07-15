@@ -1,0 +1,25 @@
+<div>
+  <mat-grid-list cols="3" rowHeight="2:1">
+    <mat-grid-tile *ngFor="let professor of professores">
+      <mat-card>
+        <mat-card-header>
+          <mat-card-title>{{professor.nome}}</mat-card-title>
+          <mat-card-subtitle *ngIf="professor.email != ''">Email: {{professor.email}}</mat-card-subtitle>
+        </mat-card-header><br>
+        <!-- <mat-card-content>
+          <ul>
+              <li *ngFor="let disciplina of professores">{{disciplina.nome}}</li>
+          </ul>
+        </mat-card-content> -->
+        <mat-card-actions>
+          <button mat-button (click)="editar(professor)">
+            <mat-icon>edit</mat-icon>
+          </button>
+          <button mat-button (click)="excluir(professor)">
+            <mat-icon>delete</mat-icon>
+          </button>
+        </mat-card-actions>
+      </mat-card>
+    </mat-grid-tile>
+</mat-grid-list>
+</div>

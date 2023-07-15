@@ -1,0 +1,12 @@
+<mat-toolbar class="menu">
+    <button color="accent" mat-button [matMenuTriggerFor]="menuP">Professor</button>
+    <mat-menu #menuP="matMenu">
+        <button [routerLink]="['cadastrar-professor']" mat-menu-item>Cadastrar Professor</button>
+        <button [routerLink]="['listar-professor']" mat-menu-item>Listar Professores</button>
+    </mat-menu>
+    <button color="accent" mat-button [matMenuTriggerFor]="menuD">Disciplina</button>
+    <mat-menu #menuD="matMenu">
+        <button [routerLink]="['cadastrar-disciplina']" mat-menu-item>Cadastrar Disciplina</button>
+        <button [routerLink]="['listar-disciplina']" mat-menu-item>Listar Disciplina</button>
+    </mat-menu>
+</mat-toolbar>

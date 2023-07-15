@@ -1,0 +1,47 @@
+{
+  "disciplinas": [
+    {
+      "id": 1,
+      "nome": "Matemática",
+      "cargaHoraria": 600,
+      "professor": 2
+    },
+    {
+      "id": 2,
+      "nome": "Português",
+      "cargaHoraria": 600,
+      "professor": 1
+    }
+  ],
+  "professores": [
+    {
+      "id": 1,
+      "nome": "João",
+      "email": "simonlucena8@gmail.com",
+      "disciplinas": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": 2,
+      "nome": "Maria",
+      "email": "simonlucena8@gmail.com",
+      "disciplinas": [
+        1
+      ]
+    },
+    {
+      "id": 3,
+      "nome": "Simon",
+      "email": "s",
+      "disciplinas": []
+    },
+    {
+      "id": 4,
+      "nome": "teste",
+      "email": "teste",
+      "disciplinas": []
+    }
+  ]
+}
